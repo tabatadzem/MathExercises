@@ -76,7 +76,7 @@ public class Apps {
       year4 = year3 + birth - death + immigrant;
       System.out.println("first year " + year4);
       year5 = year4 + birth - death + immigrant;
-      System.out.println("first year " + year4);
+      System.out.println("first year " + year5);
 
     }
 
