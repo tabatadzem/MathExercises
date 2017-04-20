@@ -3,9 +3,7 @@ import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-/**
- * Created by Maestro on 20.04.2017.
- */
+
 
 public class Apps {
 
@@ -49,8 +47,14 @@ public class Apps {
 //        Rectangle rectangle = new Rectangle(width, hight);
 //        System.out.println("area " +df.format( rectangle.getArea()));
 //        System.out.println("perimeter " +df.format( rectangle.getPerimeter()));
-
-        Runner runner = new Runner(45,15.0);
+        double time ;
+        double distance ;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("please enter the distance: ");
+        distance = scanner.nextDouble();
+        System.out.println("please enter the time: ");
+        time = scanner.nextDouble();
+        Runner runner = new Runner( time, distance);
         DecimalFormat df = new DecimalFormat("####0.000");
         System.out.print("speed is "+df.format( runner.getSpeed() ));
 
