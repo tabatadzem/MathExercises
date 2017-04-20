@@ -47,17 +47,36 @@ public class Apps {
 //        Rectangle rectangle = new Rectangle(width, hight);
 //        System.out.println("area " +df.format( rectangle.getArea()));
 //        System.out.println("perimeter " +df.format( rectangle.getPerimeter()));
-        double time ;
-        double distance ;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("please enter the distance: ");
-        distance = scanner.nextDouble();
-        System.out.println("please enter the time: ");
-        time = scanner.nextDouble();
-        Runner runner = new Runner( time, distance);
-        DecimalFormat df = new DecimalFormat("####0.000");
-        System.out.print("speed is "+df.format( runner.getSpeed() ));
+//        double time ;
+//        double distance ;
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("please enter the distance: ");
+//        distance = scanner.nextDouble();
+//        System.out.println("please enter the time: ");
+//        time = scanner.nextDouble();
+//        Runner runner = new Runner( time, distance);
+//        DecimalFormat df = new DecimalFormat("####0.000");
+//        System.out.print("speed is "+df.format( runner.getSpeed() ));
+//
+      int birth;
+      int death;
+      int immigrant;
+      int population = 312032486;
+      int year1, year2, year3, year4, year5 ;
 
+      birth = (60 * 60 * 24 * 365)/7;
+      death = (60 * 60 * 24 * 365)/13;
+      immigrant = (60 * 60 * 24 * 365)/45;
+      year1 = population;
+      System.out.println("first year " + year1);
+      year2 = year1 + birth - death + immigrant;
+      System.out.println("first year " + year2);
+      year3 = year2 + birth - death + immigrant;
+      System.out.println("first year " + year3);
+      year4 = year3 + birth - death + immigrant;
+      System.out.println("first year " + year4);
+      year5 = year4 + birth - death + immigrant;
+      System.out.println("first year " + year4);
 
     }
 
