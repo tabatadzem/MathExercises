@@ -9,7 +9,7 @@ public class Apps {
 
     public static void main (String[] args ) {
 
-       /* System.out.println("BBBBBB   UU   UU  ZZZZZZZ   IIIIIII ");
+      /* System.out.println("BBBBBB   UU   UU  ZZZZZZZ   IIIIIII ");
         System.out.println("BB  BB   UU   UU       ZZ      II   ");
         System.out.println("BBBBBB   UU   UU     ZZ        II    ");
         System.out.println("BB  BB   UU   UU  ZZ           II    ");
@@ -58,25 +58,18 @@ public class Apps {
 //        DecimalFormat df = new DecimalFormat("####0.000");
 //        System.out.print("speed is "+df.format( runner.getSpeed() ));
 //
-      int birth;
-      int death;
-      int immigrant;
-      int population = 312032486;
-      int year1, year2, year3, year4, year5 ;
 
-      birth = (60 * 60 * 24 * 365)/7;
-      death = (60 * 60 * 24 * 365)/13;
-      immigrant = (60 * 60 * 24 * 365)/45;
-      year1 = population;
-      System.out.println("first year " + year1);
-      year2 = year1 + birth - death + immigrant;
-      System.out.println("first year " + year2);
-      year3 = year2 + birth - death + immigrant;
-      System.out.println("first year " + year3);
-      year4 = year3 + birth - death + immigrant;
-      System.out.println("first year " + year4);
-      year5 = year4 + birth - death + immigrant;
-      System.out.println("first year " + year5);
+      Population population = new Population(3467849, 3254697,45982 );
+
+      System.out.println("first year " + population.getYear1());
+
+      System.out.println("first year " + population.getYear2());
+
+      System.out.println("first year " + population.getYear3());
+
+      System.out.println("first year " + population.getYear4());
+
+      System.out.println("first year " + population.getYear5());
 
     }
 
